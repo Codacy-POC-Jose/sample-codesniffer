@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 
 <ruleset name="PHP_CodeSniffer">
     <description>PHPCS configuration file.</description>
@@ -8,4 +8,12 @@
     </rule>
 
     <rule ref="WordPressVIPMinimum.Variables.VariableAnalysis"></rule>
+
+
+    <rule ref="WordPress.WP.I18n.MissingTranslatorsComment">
+        <type>error</type>
+    </rule>
+    <rule ref="WordPress.WP.I18n.TranslatorsCommentWrongStyle">
+        <type>error</type>
+    </rule>
 </ruleset>
