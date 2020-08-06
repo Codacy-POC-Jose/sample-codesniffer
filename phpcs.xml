@@ -9,7 +9,6 @@
 
     <rule ref="WordPressVIPMinimum.Variables.VariableAnalysis"></rule>
 
-
     <rule ref="WordPress.WP.I18n.MissingTranslatorsComment">
         <type>error</type>
     </rule>
@@ -17,5 +16,5 @@
         <type>error</type>
     </rule>
 
-    <exclude-pattern type="relative">^/src/*</exclude-pattern>
+    <exclude-pattern>src/*</exclude-pattern>
 </ruleset>
