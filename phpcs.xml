@@ -16,4 +16,6 @@
     <rule ref="WordPress.WP.I18n.TranslatorsCommentWrongStyle">
         <type>error</type>
     </rule>
+
+    <exclude-pattern type="relative">^/src/*</exclude-pattern>
 </ruleset>
