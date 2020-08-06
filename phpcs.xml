@@ -16,5 +16,5 @@
         <type>error</type>
     </rule>
 
-    <exclude-pattern type="relative">User.php</exclude-pattern>
+    <exclude-pattern>*/User.php</exclude-pattern>
 </ruleset>
