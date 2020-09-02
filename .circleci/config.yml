@@ -10,6 +10,6 @@ workflows:
       - codacy/checkout_and_version:
           write_sbt_version: true
       - codacy/publish_ghr:
-          path: .
+          path: ~/workdir
           requires:
             - codacy/checkout_and_version
