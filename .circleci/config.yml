@@ -7,8 +7,7 @@ workflows:
   version: 2
   test-and-publish:
     jobs:
-      - codacy/checkout_and_version:
-          write_sbt_version: true
+      - codacy/checkout_and_version
       - codacy/publish_ghr:
           path: ~/workdir
           requires:
