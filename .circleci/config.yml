@@ -8,7 +8,13 @@ workflows:
   test-and-publish:
     jobs:
       - codacy/checkout_and_version
+      - codacy/sbt:
+          name: test
+          cmd: |
+            echo "cenas" > ok.txt
+          requires:
+            - codacy/checkout_and_version
       - codacy/publish_ghr:
           path: ~/workdir
           requires:
-            - codacy/checkout_and_version
+            - test
