@@ -15,6 +15,5 @@ workflows:
           requires:
             - codacy/checkout_and_version
       - codacy/publish_ghr:
-          path: ~/
           requires:
             - test
