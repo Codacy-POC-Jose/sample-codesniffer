@@ -1,0 +1,13 @@
+version: 2.1
+
+orbs:
+  codacy: codacy/base@2.14.8
+
+workflows:
+  version: 2
+  test-and-publish:
+    jobs:
+      - codacy/checkout_and_version:
+          write_sbt_version: true
+      - codacy/publish_ghr:
+          context: CodacyAWS
