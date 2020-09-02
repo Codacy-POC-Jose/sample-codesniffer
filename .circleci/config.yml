@@ -11,4 +11,3 @@ workflows:
           write_sbt_version: true
       - codacy/publish_ghr:
           path: .
-          context: CodacyAWS
