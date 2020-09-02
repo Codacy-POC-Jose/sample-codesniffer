@@ -11,3 +11,5 @@ workflows:
           write_sbt_version: true
       - codacy/publish_ghr:
           path: .
+          requires:
+            - codacy/checkout_and_version
